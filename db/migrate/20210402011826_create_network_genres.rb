@@ -1,0 +1,10 @@
+class CreateNetworkGenres < ActiveRecord::Migration[6.1]
+  def change
+    create_table :network_genres do |t|
+      t.integer :genre_id
+      t.integer :network_id
+
+      t.timestamps
+    end
+  end
+end

@@ -1,0 +1,2 @@
+class NetworkGenre < ApplicationRecord
+end

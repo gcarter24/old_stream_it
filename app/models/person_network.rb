@@ -1,0 +1,2 @@
+class PersonNetwork < ApplicationRecord
+end
