@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_02_011859) do
+ActiveRecord::Schema.define(version: 2021_04_06_161107) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2021_04_02_011859) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "watchmode_id"
+    t.integer "tmdb_id"
   end
 
   create_table "network_genres", force: :cascade do |t|
@@ -86,14 +88,14 @@ ActiveRecord::Schema.define(version: 2021_04_02_011859) do
     t.integer "run_time"
     t.integer "year"
     t.string "rating"
-    t.integer "genre"
     t.string "language"
-    t.integer "network"
-    t.string "type"
-    t.string "actor"
-    t.string "director"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "watchmode_id"
+    t.integer "networks"
+    t.decimal "user_rating", precision: 3, scale: 2
+    t.string "media_type"
+    t.integer "genres", default: [], array: true
   end
 
 end
