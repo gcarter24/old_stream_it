@@ -25,22 +25,30 @@
 
 # })
 # title.save
-# networks = netflix = 248
+
+title = Title.new({ "watchmode_id": 129109,
+                    "title": "Angel Heart",
+                    "plot": "Down-and-out private detective Harry Angel is ordered by the mysterious Louis Cyphre to go on a mission to find a missing person. His routine failure soon leads to a bloody spar with himself, as he goes on a supernatural journey into his own soul.",
+                    "media_type": "movie",
+                    "run_time": 113,
+                    "year": 1987,
+                    "genres": [
+  11,
+  13,
+],
+                    "user_rating": 7.3,
+                    "rating": "R",
+                    "language": "en",
+                    "networks": 1724 })
+title.save
+# network = Network.new("id": 60,
+#                       "name": "Showtime",
+#                       "country": "US")
+# network.save
+# networks =
+# netflix = 248
 # hulu = 431
 # hbo max = 1724
 # disney = 2097
 # starz = 374
 # prime video = 1206
-
-title = Title.new({ "watchmode_id": 1406847,
-                    "title": "The Matrix",
-                    "plot": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
-                    "media_type": "movie",
-                    "run_time": 136,
-                    "year": 1999,
-                    "genres": [1, 15],
-                    "user_rating": 8.7,
-                    "rating": "R",
-                    "language": "en",
-                    "networks": 1724 })
-title.save
