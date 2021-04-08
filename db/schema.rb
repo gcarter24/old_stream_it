@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_06_161107) do
+ActiveRecord::Schema.define(version: 2021_04_07_141957) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -96,6 +96,8 @@ ActiveRecord::Schema.define(version: 2021_04_06_161107) do
     t.decimal "user_rating", precision: 3, scale: 2
     t.string "media_type"
     t.integer "genres", default: [], array: true
+    t.string "image"
+    t.string "streaming_url"
   end
 
 end

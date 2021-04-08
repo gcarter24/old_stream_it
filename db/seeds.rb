@@ -26,24 +26,26 @@
 # })
 # title.save
 
-title = Title.new({ "watchmode_id": 129109,
-                    "title": "Angel Heart",
-                    "plot": "Down-and-out private detective Harry Angel is ordered by the mysterious Louis Cyphre to go on a mission to find a missing person. His routine failure soon leads to a bloody spar with himself, as he goes on a supernatural journey into his own soul.",
+title = Title.new({ "watchmode_id": 1171404,
+                    "title": "How to Succeed in Business Without Really Trying",
+
+                    "plot": "A young but bright former window cleaner rises to the top of his company by following the advice of a book about ruthless advancement in business.",
                     "media_type": "movie",
-                    "run_time": 113,
-                    "year": 1987,
+                    "run_time": 121,
+                    "year": 1967,
                     "genres": [
-  11,
-  13,
+  4,
+  32,
 ],
-                    "user_rating": 7.3,
-                    "rating": "R",
+                    "user_rating": 7.5,
+
+                    "rating": "NR",
                     "language": "en",
-                    "networks": 1724 })
+                    "networks": 1206,
+                    "image": "https://cdn.watchmode.com/posters/01171404_poster_w185.jpg",
+                    "streaming_url": "http://www.amazon.com/gp/product/B07HZ423PH?" })
 title.save
-# network = Network.new("id": 60,
-#                       "name": "Showtime",
-#                       "country": "US")
+# network = Network.new()
 # network.save
 # networks =
 # netflix = 248
@@ -52,3 +54,8 @@ title.save
 # disney = 2097
 # starz = 374
 # prime video = 1206
+# showtime = 60
+
+gt = GenreTitle.create(title_id: 60, genre_id: 4)
+gt = GenreTitle.create(title_id: 60, genre_id: 32)
+# gt = GenreTitle.create(title_id: , genre_id:)

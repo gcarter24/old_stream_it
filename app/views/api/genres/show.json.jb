@@ -1,6 +1,4 @@
 {
-  id: @genre.id,
+  id: @genre.watchmode_id,
   name: @genre.name,
-  watchmode_id: @genre.watchmode_id,
-  tmdb_id: @genre.tmdb_id,
 }

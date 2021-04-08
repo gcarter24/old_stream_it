@@ -1,2 +1,0 @@
-class PersonNetwork < ApplicationRecord
-end

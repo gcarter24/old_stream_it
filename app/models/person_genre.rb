@@ -1,2 +1,0 @@
-class PersonGenre < ApplicationRecord
-end

@@ -4,12 +4,14 @@ Rails.application.routes.draw do
 
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
   namespace :api do
-    get "/titles" => "titles#show"
-    get "/networks" => "networks#show"
-    get "/genres/:id" => "genres#show"
+    get "/titles/:id" => "titles#show"
+    get "/titles" => "titles#index"
+    get "/networks/:id" => "networks#show"
+    get "/networks" => "networks#index"
+    get "/genres/:watchmode_id" => "genres#show"
     get "/genres" => "genres#index"
+    get "/genre_titles/:id" => "genre_titles#show"
     get "/people" => "people#show"
     post "/movies" => "movies#create"
-    patch "/genres/:id" => "genres#update"
   end
 end

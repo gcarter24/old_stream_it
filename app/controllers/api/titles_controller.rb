@@ -1,11 +1,15 @@
 class Api::TitlesController < ApplicationController
+  def index
+    @titles = Title.order(:id => :asc)
+    render "index.json.jb"
+  end
+
   def show
-    # response = HTTP.get("https://api.watchmode.com/v1/genres/?apiKey=#{Rails.application.credentials.watchmode_api[:api_key]}")
-    # render json: response.parse
-    # render "show.json.jb"
+    @title = Title.find_by(id: params[:id])
+    render "show.json.jb"
   end
 
   def create
     @title = Title.new()
-  end 
+  end
 end

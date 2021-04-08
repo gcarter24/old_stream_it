@@ -1,0 +1,3 @@
+{ id: @genre_title.id,
+  title_id: @genre_title.title_id,
+  genre_id: @genre_title.genre_id }
