@@ -6,10 +6,8 @@ class Api::TitlesController < ApplicationController
 
   def show
     @title = Title.find_by(id: params[:id])
+    genre_title = GenreTitle.find_by(id: params[:id])
     render "show.json.jb"
   end
 
-  def create
-    @title = Title.new()
-  end
 end

@@ -1,5 +1,6 @@
 class Title < ApplicationRecord
-  # has_many :genres, through: :GenreTitle
+  # has_many :genre_titles
+  # has_many :genres, through: :genre_titles
+  # has_many :networks
   # has_many :genres
-  # belongs_to :GenreTitle
 end

@@ -26,25 +26,20 @@
 # })
 # title.save
 
-title = Title.new({ "watchmode_id": 1171404,
-                    "title": "How to Succeed in Business Without Really Trying",
-
-                    "plot": "A young but bright former window cleaner rises to the top of his company by following the advice of a book about ruthless advancement in business.",
-                    "media_type": "movie",
-                    "run_time": 121,
-                    "year": 1967,
-                    "genres": [
-  4,
-  32,
-],
-                    "user_rating": 7.5,
-
-                    "rating": "NR",
-                    "language": "en",
-                    "networks": 1206,
-                    "image": "https://cdn.watchmode.com/posters/01171404_poster_w185.jpg",
-                    "streaming_url": "http://www.amazon.com/gp/product/B07HZ423PH?" })
-title.save
+# title = Title.new({ "watchmode_id": ,
+#                     "title": ,
+#                     "plot": ,
+#                     "media_type": ,
+#                     "run_time": ,
+#                     "year": ,
+#                     "genres": [],
+#                     "user_rating": ,
+#                     "rating": ,
+#                     "language": ,
+#                     "networks": ,
+#                     "image": ,
+#                     "streaming_url":  })
+# title.save
 # network = Network.new()
 # network.save
 # networks =
@@ -56,6 +51,11 @@ title.save
 # prime video = 1206
 # showtime = 60
 
-gt = GenreTitle.create(title_id: 60, genre_id: 4)
-gt = GenreTitle.create(title_id: 60, genre_id: 32)
 # gt = GenreTitle.create(title_id: , genre_id:)
+
+# genre_with_network = Genre.all
+
+# genre_with_network.each do |genre|
+#   network_genre = NetworkGenre.new(genre_id: genre.watchmode_id, network_id: genre.networks)
+#   network_genre.save
+# end
