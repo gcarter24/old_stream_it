@@ -9,7 +9,7 @@
   run_time: @title.run_time,
   media_type: @title.media_type,
   language: @title.language,
-  genres: @title.genres,
+  genres: @title.genre,
   networks: @title.networks,
   image: @title.image,
   streaming_url: @title.streaming_url,

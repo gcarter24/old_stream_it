@@ -8,9 +8,9 @@ Rails.application.routes.draw do
     get "/titles" => "titles#index"
     get "/networks/:id" => "networks#show"
     get "/networks" => "networks#index"
-    get "/genres/:watchmode_id" => "genres#show"
-    # get "/genres" => "genres#index"
+    get "/genres/:id" => "genres#show"
+    get "/genres" => "genres#index"
     # get "/genre_titles/:id" => "genre_titles#show"
-    
+
   end
 end

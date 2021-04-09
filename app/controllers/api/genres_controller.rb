@@ -8,7 +8,7 @@ class Api::GenresController < ApplicationController
   end
 
   def show
-    @genre = Genre.find_by(watchmode_id: params[:watchmode_id])
+    @genre = Genre.find_by(id: params[:id])
 
     render "show.json.jb"
   end
